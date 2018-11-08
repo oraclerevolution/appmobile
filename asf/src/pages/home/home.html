@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar color="asf">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align:center;">African Startup Forum</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-img style="width:100%; height:150px;" src="../../assets/imgs/asf_menu.png"></ion-img>
+  <h2 style="text-align:center;">AFRICAN STARTUP FORUM 2018</h2>
+  <hr style="width:50%;display:block;text-align:left;height:4px;">
+  <div style="padding:16px;">
+      <p class="desc">
+          Le Forum Economique des Startups, Incubateurs et Investisseurs d'Afrique se tiendra du 13 au 17 Novembre 2018, à l'INJS (Institut Nationale des Jeux et des Sports) - Côte d'Ivoire.
+        </p>  
+      
+        <a (click)="navToInscription()" ion-button color="asf">Inscrivez-vous</a>
+  </div>
+  <div class="raisons">
+    <h2>5 raisons d'y participer</h2>
+    <ul class="liste">
+      <li class="item">Faire connaître et valoriser ma startup</li>
+      <li class="item">Bénéficier de formations et de conseils</li>
+      <li class="item">Trouver des potentiels partenaires, financements et investisseurs pour développer ma startup</li>
+      <li class="item">Mentorer, former et coacher les créateurs de startups</li>
+      <li class="item">Trouver des projets à fort potentiel pour leur financement</li>
+    </ul>
+  </div>
+  <div class="chiffres">
+    <h2>Les chiffres de l'ASF 2018</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" class="col">
+          <ion-icon name="grid"></ion-icon> <br>
+          <span>04 <br> JOURS</span>
+        </ion-col>
+        <ion-col size="6" class="col">
+            <ion-icon name="laptop"></ion-icon> <br>
+            <span>250 <br> STARTUPS</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col size="6" class="col">
+            <ion-icon name="megaphone"></ion-icon> <br>
+            <span>+100 <br> SPEAKERS</span>
+          </ion-col>
+          <ion-col size="6" class="col">
+              <ion-icon name="person"></ion-icon> <br>
+              <span>10000 <br> PARTICIPANTS ATTENDUS</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="6" class="col">
+              <ion-icon name="trophy"></ion-icon> <br>
+              <span>20 <br> PRIX A DECERNES</span>
+            </ion-col>
+            <ion-col size="6" class="col">
+                <ion-icon name="people"></ion-icon> <br>
+                <span>15 <br> SECTEURS D'ACTIVITE</span>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </div>
+  <div class="participants">
+    <h2>Les intervenants de l'ASF 2018</h2>
+      <ion-grid>
+          <ion-row>
+            <ion-col size="4" ion-item *ngFor="let speaker of speakersList" (click)="onLoadSpeaker(speaker)">
+                <ion-img width="150" height="150" src="{{ speaker.src }}"></ion-img>
+                <div class="nom">
+                    {{ speaker.name }}
+                </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <br>
+        <button ion-button (click)="navToSpeaker()" class="bouton">Voir tous les intervenants</button>
+  </div>
+  
+</ion-content>

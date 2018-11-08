@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="text-align:center;">{{ speaker.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card padding>
+    <ion-img [width]="200" [height]="200" src="../../assets/imgs/logo.png"></ion-img>
+    <ion-card-header> {{ speaker.name }} </ion-card-header>
+    <ion-card-content>
+      <p *ngFor="let line of speaker.description"> {{ line }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

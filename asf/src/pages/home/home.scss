@@ -1,0 +1,51 @@
+page-home {
+    .raisons{
+        background-color: #db8d06;
+        padding: 16px;
+        margin: 15px;
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        li{
+            border: 2px solid white;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 9px;
+            text-align: center;
+        }
+        
+    }
+    .chiffres{
+        background-color: lightgrey;
+        padding: 16px;
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        .col{
+            border: 1px solid white;
+            text-align:center;
+            margin: 5px;
+            padding: 10px;
+            background-color: white;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px black;
+        }
+    }
+    .participants{
+        padding: 16px;
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        .bouton{
+            background-color: #27ae60;
+        }
+    }
+    
+    
+}
