@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { InscriptionPage } from '../inscription/inscription';
 import { SingleSpeakerPage } from '../single-speaker/single-speaker';
 import { ListPage } from '../list/list';
@@ -35,30 +35,6 @@ export class HomePage {
         'poste: ministre de la defense'
       ]
     },
-    // {
-    //   src: "../../assets/imgs/logo.png",
-    //   name: "Oracle code",
-    //   description: [
-    //     'profession: web hacker',
-    //     'poste: ministre des affaires exterieures'
-    //   ]
-    // },
-    // {
-    //   src: "../../assets/imgs/logo.png",
-    //   name: "Oracle code",
-    //   description: [
-    //     'profession: web hacker',
-    //     'poste: ministre des affaires exterieures'
-    //   ]
-    // },
-    // {
-    //   src: "../../assets/imgs/logo.png",
-    //   name: "Oracle code",
-    //   description: [
-    //     'profession: web hacker',
-    //     'poste: ministre des affaires exterieures'
-    //   ]
-    // },
   ]
   
   constructor(public navCtrl: NavController) {
@@ -73,7 +49,7 @@ export class HomePage {
     this.navCtrl.push(ListPage);
   }
   
-  onLoadSpeaker(speaker: {name:string, description: string[]}){
+  onLoadSpeaker(speaker: {name:string, description: string[], src: string}){
     this.navCtrl.push(SingleSpeakerPage, {speaker:speaker});
   }
 

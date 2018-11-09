@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
+import { DetailsProgrammePage } from '../details-programme/details-programme';
 
-/**
- * Generated class for the ProgrammePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,11 +10,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProgrammePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modalCtrl:ModalController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProgrammePage');
-  }
+ showProgram(){
+   const modal = this.modalCtrl.create(DetailsProgrammePage);
+   modal.present();
+ }
+
+ 
+  
 
 }

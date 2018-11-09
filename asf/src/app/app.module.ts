@@ -16,6 +16,7 @@ import { ProgrammePage } from '../pages/programme/programme';
 import { PrixPage } from '../pages/prix/prix';
 import { ContactPage } from '../pages/contact/contact';
 import { InscriptionPage } from '../pages/inscription/inscription';
+import { DetailsProgrammePage } from '../pages/details-programme/details-programme';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InscriptionPage } from '../pages/inscription/inscription';
     ProgrammePage,
     PrixPage,
     ContactPage,
-    InscriptionPage
+    InscriptionPage,
+    DetailsProgrammePage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { InscriptionPage } from '../pages/inscription/inscription';
     ProgrammePage,
     PrixPage,
     ContactPage,
-    InscriptionPage
+    InscriptionPage,
+    DetailsProgrammePage
   ],
   providers: [
     StatusBar,
