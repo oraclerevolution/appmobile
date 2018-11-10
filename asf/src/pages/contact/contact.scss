@@ -1,3 +1,28 @@
 page-contact {
-
+    .map{
+        width: 100%;
+        min-height: 250px;
+        display: block;
+        border: 3px solid lightgray;
+        h2{
+            text-align: center;
+        }
+    }
+    .contacts{
+        margin-top: 10px;
+        background-color: rgb(39, 34, 34);
+        padding: 16px;
+        .col{
+            margin: 5px;
+            text-align: center;
+            width: 33.33%;
+            color: white;
+        }
+        .text{
+            color: #27ae60;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+    }
 }
